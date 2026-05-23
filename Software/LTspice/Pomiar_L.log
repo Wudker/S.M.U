@@ -1,0 +1,41 @@
+LTspice 24.1.5 for Windows
+Circuit: C:\Users\Duszy\Desktop\Projekty\S.M.T\LTspice\Pomiar_L.net
+Start Time: Fri Mar  6 22:28:52 2026
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+C1: Increased Cpar to 4.7e-14
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Increasing initial diagonal Gmin to 1000
+Gmin = 1000
+Gmin = 107.374
+Gmin = 11.5292
+Gmin = 1.23794
+Gmin = 0.132923
+Gmin = 0.0142725
+Gmin = 0.0015325
+Gmin = 0.00016455
+Gmin = 1.76685e-05
+Gmin = 1.89714e-06
+Gmin = 2.03704e-07
+Gmin = 2.18725e-08
+Gmin = 2.34854e-09
+Gmin = 2.52173e-10
+Gmin = 2.70769e-11
+Gmin = 2.90735e-12
+Gmin = 3.12175e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.444 seconds.
+
+Files loaded:
+C:\Users\Duszy\Desktop\Projekty\S.M.T\LTspice\Pomiar_L.net
+C:\Users\Duszy\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\Duszy\AppData\Local\LTspice\lib\cmp\standard.mos
+C:\Users\Duszy\AppData\Local\LTspice\lib\sub\LT1011.sub
+

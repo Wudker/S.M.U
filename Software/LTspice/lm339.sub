@@ -1,0 +1,29 @@
+* LM339 Voltage Comparator SPICE Subcircuit (4 channels)
+* Source: public LTspice libraries (example) :contentReference[oaicite:1]{index=1}
+
+.SUBCKT LM339 1 2 3 4 5
+* pins:
+* 1 = IN+,
+* 2 = IN-,
+* 3 = VCC,
+* 4 = GND (-Vee),
+* 5 = OPEN-COLLECTOR OUTPUT
+
+* input stage differential transistors
+Q1 10 1 4 QN
+Q2 11 2 4 QN
+
+* current mirror load
+Q3 12 10 4 QN
+Q4 12 11 4 QN
+
+* output transistor
+Q5 5 12 4 QN
+
+* bias network
+R1 3 12 100k
+R2 10 11 10k
+
+.MODEL QN NPN (IS=1e-14 BF=100)
+
+.ENDS LM339
