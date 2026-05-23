@@ -1,7 +1,5 @@
 # S.M.U. – Custom RLC Component Meter
 
-![Prototype](images/prototype.jpg)
-
 ## Description
 
 S.M.U. is a custom-built RLC component meter developed for measuring resistance, capacitance and inductance of common electronic components. The project originated from the need for a convenient way to test coils and passive components during electronics prototyping.
