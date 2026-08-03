@@ -1,72 +1,11 @@
 # S.M.U. – Custom RLC Component Meter
 
-## Description
+S.M.U. is a portable RLC meter based on the Raspberry Pi Pico, developed for testing coils and passive components during electronics prototyping. Resistance is measured using a voltage divider, capacitance through RC discharge timing to approximately 37% of the initial voltage, and inductance through LC resonance and frequency analysis. Custom measurement algorithms and automatic range switching process the signals, while an SSD1306 OLED presents the results. The device combines analog measurement circuits, embedded software, a custom PCB and Li-Ion power supply in a single enclosure.
 
-S.M.U. is a custom-built RLC component meter developed for measuring resistance, capacitance and inductance of common electronic components. The project originated from the need for a convenient way to test coils and passive components during electronics prototyping.
+## Technologies
 
-The measurement process is intentionally simple: the user selects the component type, places it into the measurement connector and starts the measurement.
+`Raspberry Pi Pico` `C/C++` `ADC measurements` `RC time constant` `LC resonance` `LM339 comparator` `SSD1306 OLED` `Custom PCB` `Li-Ion battery`
 
-The project combines analog measurement circuits, signal processing and embedded software into a single portable device.
+## Usage and development status
 
-## Features
-
-* Resistance measurement
-* Capacitance measurement
-* Inductance measurement
-* Automatic range switching
-* Custom measurement algorithms
-* OLED user interface
-* Custom PCB
-* Battery-powered operation
-
-## Hardware
-
-* Raspberry Pi Pico
-* SSD1306 OLED display
-* LM339 comparator
-* Analog measurement circuits
-* Custom PCB
-* Li-Ion power supply
-
-## Measurement methods
-
-### Resistance
-
-Resistance measurement is based on a voltage divider and reference resistors.
-
-### Capacitance
-
-Capacitance is measured using the RC time constant method by detecting the discharge time to approximately 37% of the initial voltage.
-
-### Inductance
-
-Inductance measurement is based on LC resonance and frequency analysis using a comparator and oscillation counting.
-
-## Software
-
-* C/C++
-* ADC measurements
-* Frequency measurement
-* Signal processing
-* User interface control
-
-## Challenges
-
-Main development challenges:
-
-* extending the measurement range,
-* reducing measurement error at high resistance values,
-* reliable oscillation detection,
-* improving measurement stability,
-* optimizing analog measurement circuits.
-
-## Current status
-
-Working prototype built and tested.
-
-Future improvements:
-
-* improved accuracy,
-* better auto-ranging,
-* higher measurement stability,
-* redesigned analog front-end.
+Select resistance, capacitance or inductance mode, place the unpowered component in the measurement connector and start the measurement. Capacitors should always be fully discharged before being connected. The prototype has been built and tested; future improvements include increased accuracy, more reliable auto-ranging, improved stability and a redesigned analog front-end.
